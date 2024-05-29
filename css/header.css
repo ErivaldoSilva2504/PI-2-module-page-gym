@@ -1,0 +1,46 @@
+@font-face {
+    font-family: oswald;
+    src: url(../Fonts/Oswald-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-family: 'oswald', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}    
+
+.nav-link {
+    margin-left: 1rem ;
+    margin-right: 1rem;
+}
+
+
+.btn {
+    margin-left: 0.7rem ;
+    margin-right: 0.7rem;
+    padding: 12px 24px;
+}
+
+.navbar-toggler {
+    border-style: none;
+}
+
+.offcanvas-body{
+    padding: 50px;
+}
+
+.btn-offcanvas{
+    margin-top: 1.3rem;
+    margin-bottom: 1.4rem;
+    margin-left: -0.2rem;
+    padding-left: 6rem ;
+    padding-right: 6rem;
+}
