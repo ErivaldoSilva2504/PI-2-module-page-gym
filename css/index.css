@@ -9,6 +9,7 @@
     box-sizing: border-box;
 }
 
+/* START Header Edition*/
 
 .navbar-nav {
     text-transform: uppercase;
@@ -16,6 +17,21 @@
     font-size: 1rem;
     font-weight: 600;
 }    
+
+#img-logo{
+    margin-top: -14px;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 120px;
+    width: 80px;
+    background-color: #71c5a5;
+    margin: 0;
+}
 
 .nav-link {
     margin-left: 1rem ;
@@ -43,4 +59,12 @@
     margin-left: -0.2rem;
     padding-left: 6rem ;
     padding-right: 6rem;
+}
+
+/* Start Carousel edition*/
+
+.carousel-item img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
 }
