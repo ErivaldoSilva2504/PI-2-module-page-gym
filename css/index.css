@@ -8,6 +8,11 @@
     src:url(../Fonts/Roboto-Medium.ttf)
 }
 
+@font-face {
+    font-family: poppins;
+    src: url(../Fonts/Poppins-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +20,12 @@
 }
 
 /* Start header edition*/
+
+.container-links{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;   
+}
+
 .navbar-nav {
     font-family: 'oswald', 'Arial Narrow', Arial, sans-serif;
 }    
@@ -29,9 +40,19 @@ h1{
     background-color: #71c5a5;
 }
 
+.navbar-nav {
+    margin-bottom: 40px;
+}
+
 .nav-link {
     margin-left: 1rem ;
     margin-right: 1rem;
+    font-size: 18px;
+    
+}
+
+.navbar-toggler {
+    margin-bottom: 40px;
 }
 
 .btn {
@@ -111,4 +132,30 @@ h1{
 
 #banner-2{
   background-image: url("IMAGE_URL"), linear-gradient(#4a9e7e, #fafafa );
+}
+
+video {
+    height: 500px;
+}
+
+/*Start Horários edition*/
+
+.title-horarios {
+    font-family: 'poppins' sans-serif;
+    font-size: 32px;
+}
+
+.table tr {
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.table td {
+    color: #777777;
+    font-family: 'poppins', 'sans-serif';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
+    align-content: center;
 }
