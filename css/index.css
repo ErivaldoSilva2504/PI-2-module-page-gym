@@ -1,3 +1,32 @@
+/******************************************************************
+Theme Name: FORÇA FITNESS
+Description: Land Page Gym com uso de API e request banco de dados, PI segundo modulo do curso técnico de Desenvolvimento de Sistemas
+Author: Erivaldo do Nascimento Silva 
+Version: 1.0
+******************************************************************/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  Fonts
+2.  Template Defaul CSS
+3.  Header Section
+4.  Hero Section
+5.  Service Section
+6.  Class Section
+7.  Trainer Table Section
+8.  Team Section
+9.  Contact
+10.  Footer Style
+
+-------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------*/
+/* Fonts
+/*----------------------------------------*/
+
 @font-face {
     font-family: oswald;
     src: url(../Fonts/Oswald-VariableFont_wght.ttf);
@@ -13,46 +42,67 @@
     src: url(../Fonts/Poppins-Regular.ttf);
 }
 
+
+
+/*----------------------------------------*/
+/* Template default CSS
+/*----------------------------------------*/
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Start header edition*/
 
-.container-links{
+/*---------------------*/
+/*  Header
+/*---------------------*/
+
+
+.container-links {
     background-color: rgba(0, 0, 0, 0.5);
     height: 80px;   
 }
 
 .navbar-nav {
     font-family: 'oswald', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    margin-bottom: 40px;
 }    
 
-#img-logo{
+.navbar-brand {
     margin-top: -14px;
 }
 
-h1{
+.navbar-brand h1{
     height: 120px;
     width: 80px;
     background-color: #71c5a5;
-}
-
-.navbar-nav {
-    margin-bottom: 40px;
 }
 
 .nav-link {
     margin-left: 1rem ;
     margin-right: 1rem;
     font-size: 18px;
-    
 }
 
 .navbar-toggler {
     margin-bottom: 40px;
+}
+
+.offcanvas-header a {
+    color: white;
+    text-decoration: none;
+    margin-top: -15px;
+    margin-left: 15px;
+}
+
+.offcanvas-header h1 {
+    height: 120px;
+    width: 80px;
+    background-color: #71c5a5;
 }
 
 .btn {
@@ -61,11 +111,11 @@ h1{
     padding: 12px 24px;
 }
 
-.offcanvas-body{
+.offcanvas-body {
     padding: 50px;
 }
 
-.btn-offcanvas{
+.btn-offcanvas {
     margin-top: 1.3rem;
     margin-bottom: 1.4rem;
     margin-left: -0.2rem;
@@ -73,15 +123,23 @@ h1{
     padding-right: 6rem;
 }
 
-/* Start Carousel edition*/
+
+/*---------------------*/
+/*  Hero Section
+/*----------------------*/
+
 
 .carousel-item img {
     height: 550px;
 }
 
-/*Start search edition*/
 
-.form-label{
+/*---------------------
+  Modalidades Section
+-----------------------*/
+
+
+.form-label {
     color: #424850;
     font-family: 'oswald', 'Arial Narrow', 'Arial', 'sans-serif';
     font-size: 32px;
@@ -90,34 +148,39 @@ h1{
     margin-bottom: 2rem;
 }
 
-.form-control{
+.form-control {
     color: #424850;
     font-family: 'roboto', sans-serif;
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
     text-align: center;
-    background-color: #f6f7f8;
-    
+    background-color: #f6f7f8;    
 }
 
-.all-gyms {
+.all-gyms-container a {
     color: #71C5A5;
     font-size: 18px;
     line-height: 28px;
     font-family: 'oswald', 'Arial Narrow', 'Arial', 'sans-serif';
-}  
+}
 
-.container-banner{
+
+/*---------------------
+  Banner Section
+-----------------------*/
+
+
+.container-banner {
     border: 2px solid red;
     height: 500px;
 }
 
-.banner{
+.banner {
     border: 2px solid blue;
 }
 
-#banner-2{
+#banner-2 {
   background-image: url("IMAGE_URL"), linear-gradient(#4a9e7e, #fafafa );
 }
 
@@ -125,32 +188,172 @@ video {
     height: 500px;
 }
 
-/*Start Horários edition*/
 
-.title-horarios {
-    font-size: 32px;
-    color: #424850;
-    font-family: 'oswald', 'Arial Narrow', 'Arial', 'sans-serif';
-    line-height: 52px;
-    font-weight: 500;
-    margin-bottom: 2rem;
+/*--------------------------------
+ Trainer Table Shedule Section
+--------------------------------*/ 
+
+
+*Trainer Table Schedule*/
+
+.trainer-schedule.class-timetable .section-title h2, .class-timetable.choseus-section .section-title h2, .class-timetable.about-page-trainer .section-title h2 {
+    color: #191919;
+    margin-bottom: 61px;
 }
 
-.table tr {
+.trainer-schedule.class-timetable .section-title .nav-controls ul li, .class-timetable.choseus-section .section-title .nav-controls ul li, .class-timetable.about-page-trainer .section-title .nav-controls ul li {
+    color: #232530;
+    display: inline-block;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
+    margin-right: 54px;
+    cursor: pointer;
+}
+  
+.trainer-schedule.class-timetable .section-title .nav-controls ul li.active, .class-timetable.choseus-section .section-title .nav-controls ul li.active, .class-timetable.about-page-trainer .section-title .nav-controls ul li.active {
+    color: #f34e3a;
+}
+
+  .trainer-schedule.class-timetable .section-title .nav-controls ul li:last-child, .class-timetable.choseus-section .section-title .nav-controls ul li:last-child, .class-timetable.about-page-trainer .section-title .nav-controls ul li:last-child {
+    margin-right: 0;
+}
+
+.trainer-schedule .section-title, .choseus-section .section-title, .about-page-trainer .section-title {
     text-align: center;
 }
 
-.table td {
-    color: #777777;
-    font-family: 'poppins', 'sans-serif';
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.625em;
-    align-content: center;
+.trainer-schedule .section-title h2, .choseus-section .section-title h2, .about-page-trainer .section-title h2 {
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 46px;
 }
 
-/* Start personal trainers edition */
+.trainer-schedule .section-title h2:before, .choseus-section .section-title h2:before, .about-page-trainer .section-title h2:before {
+    width: 70px;
+    height: 3px;
+    right: 0;
+    left: 0;
+    top: 49px;
+    margin: 0 auto;
+}
+
+.trainer-schedule .section-title p, .choseus-section .section-title p, .about-page-trainer .section-title p {
+    color: #ffffff;
+}
+  
+.schedule-table {
+    overflow-x: auto;
+}
+
+.schedule-table .ts-item {
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.schedule-table.filtering .ts-item {
+    opacity: 0;
+}
+
+.schedule-table.filtering .ts-item.show {
+    opacity: 1;
+}
+
+.schedule-table table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #e1e1e1;
+}
+
+.schedule-table table thead tr {
+    background: #ffffff;
+}
+
+.schedule-table table thead tr th {
+    color: #000000;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 25px 0;
+}
+
+.schedule-table table tbody {
+    border-top: 1px solid #e5e5e5;
+}
+
+.schedule-table table tbody tr {
+    border-bottom: 1px solid #e5e5e5;
+    background: #F0F0F0;
+}
+
+.schedule-table table tbody tr:nth-child(even) {
+    background: #ffffff;
+}
+
+.schedule-table table tbody tr td {
+    border-right: 1px solid #e5e5e5;
+    padding: 20px 10px 16px;
+    width: 146px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+}
+
+.schedule-table table tbody tr td.gym h6, .schedule-table table tbody tr td.crossfit h6, .schedule-table table tbody tr td.running h6 {
+    color: #f34e3a;
+}
+
+.schedule-table table tbody tr td.yoga h6 {
+    color: #247cc6;
+}
+
+.schedule-table table tbody tr td.body h6, .schedule-table table tbody tr td.box h6 {
+    color: #6dcff6;
+}
+
+.schedule-table table tbody tr td.cardio h6 {
+    color: #4cbcc3;
+}
+
+.schedule-table table tbody tr td.box.g h6 {
+    color: #00a651;
+}
+
+.schedule-table table tbody tr td h6 {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.schedule-table table tbody tr td span {
+    font-size: 14px;
+    display: block;
+    color: #191919;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.schedule-table table tbody tr td .trainer-name {
+    font-size: 14px;
+    color: #6e6e6e;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.schedule-table table tbody tr .workout-time {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/*----------------------------------
+  Start personal trainers edition
+----------------------------------*/
 
 
 .title-personal-trainers{
@@ -159,8 +362,7 @@ video {
     font-size: 32px;
     line-height: 52px;
     font-weight: 500;
-    margin-bottom: 2rem;
-    
+    margin-bottom: 2rem;   
 }
 
 .text-personal-trainers {
@@ -183,8 +385,8 @@ video {
 .personal-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Mantém a proporção e cobre toda a div */
-  }
+    object-fit: cover;
+}
   
 .personal-reference {
     height: 380px;   
@@ -206,3 +408,4 @@ h5 {
     height: 16px;
     width: 16px;
 }
+

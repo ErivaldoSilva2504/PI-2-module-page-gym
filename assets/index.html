@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Bem-vindo à Academia FORÇA FITNESS - seu destino para saúde e bem estar. 
     Oferecemos uma variedade de serviços e instalações para ajudá-lo a alcançar seus objetivos.">
     <meta name="keywords" content="ACADEMIA, MUSCULAÇÃO, BOXE, YOGA, BEM ESTAR, SAÚDE, FITDANCE, AERÓBICA">
@@ -20,25 +21,23 @@
   </head>
 <body>
 
-  <!--VER COM EMERSON AJUDA PRA FAZER IMAGENS DO CARROUSEL SE AJUSTAREM CONFORME A TELA FOR DIMINUINDO-->
 
-
-    <!--Start header-->
+    <!-- Header Section Begin -->
     <header>
     <nav class="navbar navbar-dark fixed-top col-12 m-auto text-uppercase">
         <div class="container-links container-fluid col-12 m-auto fixed-top justify-content-around">
             <!--Start image logo-->
             <a class="navbar-brand" href="#">
-              <h1 id="img-logo" class="d-flex align-items-center justify-content-center position-relative">FF</h1>
+              <h1 class="d-flex align-items-center justify-content-center position-relative">FF</h1>
             </a>
             <!--End image logo-->
 
             <!--Ajuste min width link nav -->
             <div class="d-none d-lg-flex">
-            <!--Espaçamento conteiners menu-->    
+            <!--Espaçamento links menu-->    
             <div class="justify-content-around">    
             <!--Start list ul-->
-            <ul style="font-weight: 500;" class="navbar-nav d-flex flex-row">
+            <ul class="navbar-nav d-flex flex-row">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
@@ -74,11 +73,11 @@
         <!--End icon hamburguer-->
 
         <!--Start menu side offcanvas-->
-        <div  class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <!--Start image logo offcanvas-->
             <div class="offcanvas-header" data-bs-theme="dark">
-                <a style="color: white; text-decoration: none; margin-top: -15px; margin-left: 15px;" href="#">
-                  <h1 id="img-logo" class="d-flex align-items-center justify-content-center">FF</h1>
+                <a href="#">
+                  <h1 class="d-flex align-items-center justify-content-center">FF</h1>
                 </a>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
@@ -121,10 +120,11 @@
         </div>
     </nav>
     </header>
-    <!--End header-->
+    <!-- Header End -->
     
 
-    <!--Start area carousel-->
+    <!-- Hero Section Begin -->
+    <section class="hero-section">
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -189,157 +189,346 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <!--End area carousel-->
+  </section>
+    <!--End Section Hero-->
 
 
-  <!--Start area search-->
-  <div class="search text-center col-9 m-auto">
-    <label for="exampleDataList" class="form-label text-uppercase m-5">Encontre a sua Força Fitness</label>
-  <div class="input-group">
-    <img src="../icons/search.png" alt="search" class="input-group-text">
-    <input class="form-control text-uppercase" list="datalistOptions" id="exampleDataList" placeholder="Academia, CEP, bairro ou cidade">
-    <button type="button" class="btn btn-outline-success text-uppercase">Buscar</button>
-  </div>
-  <div class="all-gyms-container d-flex justify-content-end m-4">
-    <a class="all-gyms text-uppercase" href="#">Ver todas unidades</a>
-  </div>
-  <datalist id="datalistOptions">
-    <option value="San Francisco">
-    <option value="New York">
-    <option value="Seattle">
-    <option value="Los Angeles">
-    <option value="Chicago">
-  </datalist>
-  </div>
-  <!--End area search-->
+  <!--Modalidades Section Begin-->
+  <article class="modalidades">
+    <div class="search text-center col-9 m-auto">
+      <label for="exampleDataList" class="form-label text-uppercase m-5">Encontre a sua Força Fitness</label>
+    <div class="input-group">
+      <img src="../icons/search.png" alt="search" class="input-group-text">
+      <input class="form-control text-uppercase" list="datalistOptions" id="exampleDataList" placeholder="Academia, CEP, bairro ou cidade">
+      <button type="button" class="btn btn-outline-success text-uppercase">Buscar</button>
+    </div>
+    <div class="all-gyms-container d-flex justify-content-end m-4">
+      <a class="text-uppercase" href="#">Ver todas unidades</a>
+    </div>
+    <datalist id="datalistOptions">
+      <option value="Boa Viagem">
+        <option value="Camaragibe">
+      <option value="Carpina">
+        <option value="Limoeiro">
+      <option value="Nazaré da Mata">
+    </datalist>
+    </div>
+  </article>  
+  <!--End Section Modalidades-->
 
-  <!--Start banner area-->
 
-  <div id="carousel-banner" class="container-banner col-12 d-flex justify-content-between ">
-    <div id="banner-1" class="banner col-3">
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../video/7875587-hd_1920_1080_25fps.mp4" class="container-fluid object-fit-cover"></video>
+  <!--Banner Section Begin-->
+  <aside class="banner">
+    <div id="carousel-banner" class="container-banner col-12 d-flex justify-content-between ">
+      <div id="banner-1" class="banner col-3">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <video type="video/mp4" muted="muted" autoplay="autoplay" src="../video/7875587-hd_1920_1080_25fps.mp4" class="container-fluid object-fit-cover"></video>
+            </div>
+            <div class="carousel-item">
+              <video type="video/mp4" muted="muted" autoplay="autoplay" src="../video/Banner-musculation-2.mp4" class="container-fluid object-fit-cover"></video>
+            </div>
+            <div class="carousel-item">
+              <video type="video/mp4" muted="muted" autoplay="autoplay" src="../video/Banner-musculation-3.mp4" class="container-fluid object-fit-cover"></video>
+            </div>
           </div>
-          <div class="carousel-item">
-            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../video/Banner-musculation-2.mp4" class="container-fluid object-fit-cover"></video>
-          </div>
-          <div class="carousel-item">
-            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../video/Banner-musculation-3.mp4" class="container-fluid object-fit-cover"></video>
+        </div>
+      </div>
+      <div id="banner-2" class="banner col-6 d-flex align-items-center">
+        <h2 class="text-uppercase text-light">conheça nossas modalidades</h2>
+      </div>
+      <div id="banner-3" class="banner col-3">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <video type="video/mp4" muted="muted" autoplay="autoplay" src="../video/7875587-hd_1920_1080_25fps.mp4" class="container-fluid object-fit-cover"></video>
+            </div>
+            <div class="carousel-item">
+              <video type="video/mp4" muted="muted" autoplay="autoplay" src="../video/Banner-musculation-2.mp4" class="container-fluid object-fit-cover"></video>
+            </div>
+            <div class="carousel-item">
+              <video type="video/mp4" muted="muted" autoplay="autoplay" src="../video/Banner-musculation-3.mp4" class="container-fluid object-fit-cover"></video>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="banner-2" class="banner col-6 d-flex align-items-center">
-      <h2 class="text-uppercase text-light">conheça nossas modalidades</h2>
-    </div>
-    <div id="banner-3" class="banner col-3">
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../video/7875587-hd_1920_1080_25fps.mp4" class="container-fluid object-fit-cover"></video>
+  </aside>
+  <!--End Section Banner-->
+
+
+<!-- Trainer Table Schedule Section Begin -->
+<section class="trainer-schedule set-bg spad" data-setbg="img/trainer-bg.jpg">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="section-title">
+                  <h2>Our Trainer</h2>
+                  <p>Our fitness experts can help you discover new training techniques.</p>
+              </div>
           </div>
-          <div class="carousel-item">
-            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../video/Banner-musculation-2.mp4" class="container-fluid object-fit-cover"></video>
-          </div>
-          <div class="carousel-item">
-            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../video/Banner-musculation-3.mp4" class="container-fluid object-fit-cover"></video>
-          </div>
-        </div>
       </div>
-    </div>
-  </div>
-  <!--End banner area-->
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="schedule-table">
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>Modalidade</th>
+                              <th>Seg</th>
+                              <th>Ter</th>
+                              <th>Qua</th>
+                              <th>Qui</th>
+                              <th>Sex</th>
+                              <th>Sab</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="workout-time">Gym</td>
+                            <td class="gym">
+                                <h6>Gym</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td>
+                              <h6>Gym</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td class="yoga">
+                              <h6>Gym</h6>
+                              <span>06.00 - 21.00</span>
+                              <div class="trainer-name">
+                                  Daniela Martin
+                              </div>
+                            </td>
+                            <td>
+                              <h6>Gym</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td class="body">
+                              <h6>Gym</h6>
+                              <span>06.00 - 21.00</span>
+                              <div class="trainer-name">
+                                  Daniela Martin
+                              </div>
+                            </td>
+                            <td>
+                              <h6>Gym</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="workout-time">Treinamento Funcional</td>
+                            <td class="gym">
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td class="yoga">
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td class="body">
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="workout-time">CrossFit</td>
+                          <td class="gym">
+                            <h6>Musculaçao</h6>
+                            <span>06.00 - 21.00</span>
+                            <div class="trainer-name">
+                                Daniela Martin
+                            </div>
+                          </td>
+                            <td>
+                            </td>
+                            <td class="yoga">
+                              <h6>Musculaçao</h6>
+                              <span>06.00 - 21.00</span>
+                              <div class="trainer-name">
+                                  Daniela Martin
+                              </div>
+                            </td>
+                            <td>
+                            </td>
+                            <td class="body">
+                              <h6>Musculaçao</h6>
+                              <span>06.00 - 21.00</span>
+                              <div class="trainer-name">
+                                  Daniela Martin
+                              </div>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="workout-time">Boxe</td>
+                            <td class="gym">
+                                <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td class="body">
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="workout-time">Zumba</td>
+                            <td class="gym">
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td class="yoga">
+                              <h6>Musculaçao</h6>
+                              <span>06.00 - 21.00</span>
+                              <div class="trainer-name">
+                                  Daniela Martin
+                              </div>
+                            </td>
+                            <td>
+                            </td>
+                            <td class="body">
+                              <h6>Musculaçao</h6>
+                              <span>06.00 - 21.00</span>
+                              <div class="trainer-name">
+                                  Daniela Martin
+                              </div>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="workout-time">Yoga</td>
+                            <td class="gym">
+                                <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td>
+                            </td>
+                            <td class="yoga">
+                              <h6>Musculaçao</h6>
+                              <span>06.00 - 21.00</span>
+                              <div class="trainer-name">
+                                  Daniela Martin
+                              </div>
+                            </td>
+                            <td>
+                            </td>
+                            <td class="body">
+                              <h6>Musculaçao</h6>
+                              <span>06.00 - 21.00</span>
+                              <div class="trainer-name">
+                                  Daniela Martin
+                              </div>
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="workout-time">Ballet Fitness</td>
+                            <td class="gym">
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td class="yoga">
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td class="body">
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+</section>
+<!-- Trainer Table Schedule Section End -->
 
-  
-  <!--Start horarios area-->
-  <div class="horarios container-fluid col-11 m-5">
-    <div class="container-title-horarios d-flex justify-content-center">
-      <h2 class="title-horarios text-uppercase m-5">Horários</h2>
-    </div>
-
-
-  <table class="table table-bordered table-hover col-lg-10">
-    <thead class="table-secondary">
-      <tr>
-        <th scope="col">Modalidade</th>
-        <th scope="col">Seg</th>
-        <th scope="col">Ter</th>
-        <th scope="col">Qua</th>
-        <th scope="col">Qui</th>
-        <th scope="col">Sex</th>
-        <th scope="col">Sab</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Musculação</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-      </tr>
-      <tr>
-        <td>Treinamento Funcional</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-      </tr>
-      <tr>
-        <td>CrossFit</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-      </tr>
-      <tr>
-        <td>Boxe</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-      </tr>
-      <tr>
-        <td>Zumba</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-      </tr>
-      <tr>
-        <td>Yoga</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-      </tr>
-      <tr>
-        <td>Ballet Fitness</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-        <td>06:00<br>21:00</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<!--End horarios area-->
 
 <!--Star header personal trainers-->
 <div class="header-personal-trainers">
