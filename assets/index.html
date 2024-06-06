@@ -22,109 +22,110 @@
 <body>
 
 
-    <!-- Header Section Begin -->
-    <header>
+  <!-- Header Section Begin -->
+  <header>
     <nav class="navbar navbar-dark fixed-top col-12 m-auto text-uppercase">
-        <div class="container-links container-fluid col-12 m-auto fixed-top justify-content-around">
-            <!--Start image logo-->
-            <a class="navbar-brand" href="#">
-              <h1 class="d-flex align-items-center justify-content-center position-relative">FF</h1>
+      <div class="container-links container-fluid col-12 m-auto fixed-top justify-content-around">
+        <!--Start image logo-->
+        <a class="navbar-brand" href="#">
+          <h1 class="d-flex align-items-center justify-content-center position-relative">FF</h1>
+        </a>
+        <!--End image logo-->
+
+      <!--Ajuste min width link nav -->
+      <div class="d-none d-lg-flex">
+      <!--Espaçamento links menu-->    
+      <div class="justify-content-around">    
+        <!--Start list ul-->
+        <ul class="navbar-nav d-flex flex-row">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Unidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Modalidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Horários</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Personal Trainers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Planos</a>
+          </li>
+
+          <!--Start button login-->
+          <li>
+            <a href="#" class="btn btn-outline-light" tabindex="-1" role="button" aria-disabled="false">Login</a>
+          </li>
+          <!--End button login-->
+        </ul>
+        <!--End list ul-->
+      </div>
+      </div>
+
+      <!--Start icon hamburguer-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--End icon hamburguer-->
+
+      <!--Start menu side offcanvas-->
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <!--Start image logo offcanvas-->
+        <div class="offcanvas-header" data-bs-theme="dark">
+            <a href="#">
+              <h1 class="d-flex align-items-center justify-content-center">FF</h1>
             </a>
-            <!--End image logo-->
-
-            <!--Ajuste min width link nav -->
-            <div class="d-none d-lg-flex">
-            <!--Espaçamento links menu-->    
-            <div class="justify-content-around">    
-            <!--Start list ul-->
-            <ul class="navbar-nav d-flex flex-row">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Unidades</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Modalidades</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Horários</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Personal Trainers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Planos</a>
-                </li>
-                <!--Start button login-->
-                <li>
-                  <a href="#" class="btn btn-outline-light" tabindex="-1" role="button" aria-disabled="false">Login</a>
-                </li>
-                <!--End button login-->
-              </ul>
-              <!--End list ul-->
-            </div>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <!--End image logo offcanvas-->
 
-        <!--Start icon hamburguer-->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--End icon hamburguer-->
-
-        <!--Start menu side offcanvas-->
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <!--Start image logo offcanvas-->
-            <div class="offcanvas-header" data-bs-theme="dark">
-                <a href="#">
-                  <h1 class="d-flex align-items-center justify-content-center">FF</h1>
-                </a>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <!--End image logo offcanvas-->
-
-        <!--Start list links menu side offcanvas-->
-        <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Home</a><hr>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Unidades</a><hr>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Modalidades</a><hr>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Horários</a><hr>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Personal Trainers</a><hr>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Planos</a><hr>
-                </li>
-                <!--Start button login menu offcanvas-->
-                <li>
-                    <a href="#" class="btn btn-outline-light btn-offcanvas" tabindex="-1" role="button" aria-disabled="false">Login</a>
-                </li>
-                <!--End button login menu offcanvas-->
-                <li style="text-transform: capitalize; font-size: 1.2rem;" class="nav-item">
-                    <a class="nav-link" href="#">Dúvidas Frequentes</a>
-                </li>
-            </ul>
-        </div>
-        <!--End list links menu side offcanvas-->
-        </div>
-        <!--End menu side offcanvas-->
-        </div>
+      <!--Start list links menu side offcanvas-->
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a><hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Unidades</a><hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Modalidades</a><hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Horários</a><hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Personal Trainers</a><hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Planos</a><hr>
+          </li>
+          <!--Start button login menu offcanvas-->
+          <li>
+            <a href="#" class="btn btn-outline-light btn-offcanvas" tabindex="-1" role="button" aria-disabled="false">Login</a>
+          </li>
+          <!--End button login menu offcanvas-->
+          <li style="text-transform: capitalize; font-size: 1.2rem;" class="nav-item">
+            <a class="nav-link" href="#">Dúvidas Frequentes</a>
+          </li>
+        </ul>
+      </div>
+      <!--End list links menu side offcanvas-->
+      </div>
+      <!--End menu side offcanvas-->
+      </div>
     </nav>
-    </header>
-    <!-- Header End -->
+  </header>
+  <!-- Header End -->
     
 
-    <!-- Hero Section Begin -->
-    <section class="hero-section">
+  <!-- Hero Section Begin -->
+  <section class="hero-section">
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -179,7 +180,7 @@
           <p>Some representative placeholder content for the third slide.</p>
         </div>
       </div>
-      </div>
+    <div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -190,7 +191,7 @@
       </button>
     </div>
   </section>
-    <!--End Section Hero-->
+  <!--End Section Hero-->
 
 
   <!--Modalidades Section Begin-->
@@ -218,7 +219,7 @@
 
 
   <!--Banner Section Begin-->
-  <aside class="banner">
+  <aside class="banner mb-5">
     <div id="carousel-banner" class="container-banner col-12 d-flex justify-content-between ">
       <div id="banner-1" class="banner col-3">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -258,20 +259,20 @@
   <!--End Section Banner-->
 
 
-<!-- Trainer Table Schedule Section Begin -->
-<section class="trainer-schedule set-bg spad" data-setbg="img/trainer-bg.jpg">
-  <div class="container">
+  <!-- Trainer Table Schedule Section Begin -->
+  <section class="trainer-schedule">
+    <div class="container">
       <div class="row">
           <div class="col-lg-12">
-              <div class="section-title">
-                  <h2>Our Trainer</h2>
-                  <p>Our fitness experts can help you discover new training techniques.</p>
+              <div class="section-title mt-5">
+                  <h2>Treinadores</h2>
+                  <p class="mb-5">Nossos especialistas podem ajudá-lo a descobrir novas técnicas de treinamento</p>
               </div>
           </div>
       </div>
       <div class="row">
           <div class="col-lg-12">
-              <div class="schedule-table">
+              <div class="schedule-table mb-5">
                   <table>
                       <thead>
                           <tr>
@@ -333,8 +334,6 @@
                         <tr>
                           <td class="workout-time">Treinamento Funcional</td>
                             <td class="gym">
-                            </td>
-                            <td>
                               <h6>Musculaçao</h6>
                                 <span>06.00 - 21.00</span>
                                 <div class="trainer-name">
@@ -359,6 +358,7 @@
                                     Daniela Martin
                                 </div>
                             </td>
+                            <td></td>
                         </tr>
                         <tr>
                           <td class="workout-time">CrossFit</td>
@@ -526,81 +526,159 @@
               </div>
           </div>
       </div>
-</section>
-<!-- Trainer Table Schedule Section End -->
+  </section>
+  <!-- Trainer Table Schedule Section End -->
 
 
-<!--Star header personal trainers-->
-<div class="header-personal-trainers">
-  <div class="container-title m-1 d-flex justify-content-center">
-    <h2 class="title-personal-trainers text-uppercase">Equipe</h2>
-  </div>
-  <div class="container-text d-flex justify-content-center">
-    <p style="background-color: white;" class="text-personal-trainers">Conheça nossa talentosa equipe de treinadores</p>
-  </div>
-</div>
-<!--End header personal traines-->
-
-<!--Star personal trainers-->
-
-<div class="container-personal-trainers container-fluid p-5">
-  <div class="row d-flex flex-wrap justify-content-center">
-    <div class="personal-img col-4">
-      <img src="../img/trainer-1.jpg" alt="" class="img-fluid">
+  <!--Header Personal Trainers Begin-->
+  <div class="header-personal-trainers m-5">
+    <div class="container-title m-1 d-flex justify-content-center">
+      <h2 class="title-personal-trainers text-uppercase">Equipe</h2>
     </div>
-    <div class="personal-reference col-4 p-3">
-      <h5>Personal Trainer</h5>
-      <h4>Daniela Martin</h4>
-      <p>Graduação em Educação Física<br>Pós-graduação em Fisiologia do Exercício</p>
-      <img class="icon-personal" src="../icons/logo-do-facebook.png" alt="">
-      <img class="icon-personal" src="../icons/logotipo-do-twitter.png" alt="">
-      <img class="icon-personal" src="../icons/instagram-grey-outline-22754.svg" alt="">
-    </div>
-    <div class="personal-img col-4">
-      <img src="../img/team-3.jpg" alt="" class="img-fluid">
+    <div class="container-text d-flex justify-content-center">
+      <p style="background-color: white;" class="text-personal-trainers">Conheça nossa talentosa equipe de treinadores</p>
     </div>
   </div>
-  <div class="row d-flex flex-wrap">
-    <div class="personal-reference col-4 p-3">
+  <!--End Header Personal Traines-->
+
+
+  <!--Section Personal Trainers Begin-->
+  <section class="personal-trainers">
+    <div class="container-personal-trainers container-fluid p-5">
+      <div class="row d-flex flex-wrap justify-content-center">
+        <div class="personal-img col-4">
+          <img src="../img/trainer-1.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="personal-reference col-4 p-3">
+          <h5>Personal Trainer</h5>
+          <h4>Daniela Martin</h4>
+          <p>Graduação em Educação Física<br>Pós-graduação em Fisiologia do Exercício</p>
+          <img src="../icons/logo-do-facebook.png" alt="">
+          <img src="../icons/logotipo-do-twitter.png" alt="">
+          <img src="../icons/instagram-grey-outline-22754.svg" alt="">
+        </div>
+        <div class="personal-img col-4">
+          <img src="../img/team-3.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="row d-flex flex-wrap">
+        <div class="personal-reference col-4 p-3">
+          <h5>Instrutor de boxe</h5>
+          <h4>Alex Hibas</h4>
+          <p>Bacharelado em Educação Física<br>Ex-fugilista profissional<br>Campeão Regional Torneio Norte-Nordeste 2012</p>
+          <img class="icon-personal" src="../icons/logo-do-facebook.png" alt="">
+          <img class="icon-personal" src="../icons/logotipo-do-twitter.png" alt="">
+          <img class="icon-personal" src="../icons/instagram-grey-outline-22754.svg" alt="">
+        </div>
+        <div class="personal-img col-4">
+          <img src="../img/team-5.jpg" alt="" class="img-fluid object-fit-cover">
+        </div>
+        <div class="personal-reference col-4 p-3">
+          <h5>Treinador de halterofilismo</h5>
+          <h4>Igor Castelani</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tenetur quod laudantium accusamus</p>
+          <img class="icon-personal" src="../icons/logo-do-facebook.png" alt="">
+          <img class="icon-personal" src="../icons/logotipo-do-twitter.png" alt="">
+          <img class="icon-personal" src="../icons/instagram-grey-outline-22754.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <div class="personal-img col-3">
+      <img src="../img/trainer-profile.jpg" alt="">
+    </div>  
+    <div class="personal-reference col-3">
       <h5>Instrutor de boxe</h5>
       <h4>Alex Hibas</h4>
-      <p>Bacharelado em Educação Física<br>Ex-fugilista profissional<br>Campeão Regional Torneio Norte-Nordeste 2012</p>
-      <img class="icon-personal" src="../icons/logo-do-facebook.png" alt="">
-      <img class="icon-personal" src="../icons/logotipo-do-twitter.png" alt="">
-      <img class="icon-personal" src="../icons/instagram-grey-outline-22754.svg" alt="">
-    </div>
-    <div class="personal-img col-4">
-      <img src="../img/team-5.jpg" alt="" class="img-fluid object-fit-cover">
-    </div>
-    <div class="personal-reference col-4 p-3">
-      <h5>Treinador de halterofilismo</h5>
-      <h4>Igor Castelani</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tenetur quod laudantium accusamus</p>
-      <img class="icon-personal" src="../icons/logo-do-facebook.png" alt="">
-      <img class="icon-personal" src="../icons/logotipo-do-twitter.png" alt="">
-      <img class="icon-personal" src="../icons/instagram-grey-outline-22754.svg" alt="">
     </div>
-  </div>
-</div>
+    <div class="personal-img col-3">
+      <img src="../img/person_1.jpg" alt="">
+    </div>
+    -->
+    
+    <div class="all-personal-trainers-container d-flex justify-content-end m-5">
+      <a href="#" class="primary-btn text-uppercase">Ver Todos <i class="ti-angle-double-right"></i></a>
+    </div>
+  </section>
+<!--Personal Traines Section End-->
 
-  <!--
-  <div class="personal-img col-3">
-    <img src="../img/trainer-profile.jpg" alt="">
-  </div>  
-  <div class="personal-reference col-3">
-    <h5>Instrutor de boxe</h5>
-    <h4>Alex Hibas</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tenetur quod laudantium accusamus</p>
+
+<!--Planos Section Begin-->
+<article class="pricing-section spad">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="section-title">
+                  <h2>Planos</h2>
+              </div>
+          </div>
+      </div>
+      <div class="row justify-content-center m-5">
+          <div class="plano-1 col-lg-4 col-md-8">
+              <div class="ps-item">
+                  <h3>Básico</h3>
+                  <div class="pi-price">
+                      <h2>R$ 99.00</h2>
+                      <span>SINGLE CLASS</span>
+                  </div>
+                  <ul>
+                      <li>Aulas coletivas</li>
+                      <li>Horários livres</li>
+                      <li>Avaliação física</li>
+                      <li>Zero taxa de matrícula</li>
+                  </ul>
+                  <a href="#" class="primary-btn pricing-btn">Matricule-se</a>
+                  <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-8">
+              <div class="ps-item">
+                  <h3>Platinium</h3>
+                  <div class="pi-price">
+                      <h2>R$ 139.00</h2>
+                      <span>SINGLE CLASS</span>
+                  </div>
+                  <ul>
+                      <li>Aulas coletivas</li>
+                      <li>Horários livres</li>
+                      <li>Personal Trainer</li>
+                      <li>Nutricionista</li>
+                      <li>Avaliação física</li>
+                      <li>Trinta dias de congelamento</li>
+                      <li>Zero taxa de matrícula</li>
+                  </ul>
+                  <a href="#" class="primary-btn pricing-btn">Matricule-se</a>
+                  <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-8">
+              <div class="ps-item">
+                  <h3>Vip</h3>
+                  <div class="pi-price">
+                      <h2>R$ 199.00</h2>
+                      <span>SINGLE CLASS</span>
+                  </div>
+                  <ul>
+                      <li>Aulas coletivas</li>
+                      <li>Horários livres</li>
+                      <li>Duas pessoas treinam</li>
+                      <li>Personal trainer</li>
+                      <li>Nutricionista</li>
+                      <li>Avaliação física</li>
+                      <li>Livre acesso toda unidades</li>
+                      <li>Trinta dias de congelamento</li>
+                      <li>Zero taxa de matrícula</li>
+                  </ul>
+                  <a href="#" class="primary-btn pricing-btn">Matricule-se</a>
+                  <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+              </div>
+          </div>
+      </div>
   </div>
-  <div class="personal-img col-3">
-    <img src="../img/person_1.jpg" alt="">
-  </div>
--->
-</div>
-<div class="all-personal-trainers-container d-flex col-1 justify-content-end">
-  <a class="all-personal-trainers text-uppercase" href="#">Ver todas unidades</a>
-</div>
-<!--End personal traines-->
+</article>
+<!--Planos Section End-->
 
 
 

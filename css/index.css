@@ -194,44 +194,25 @@ video {
 --------------------------------*/ 
 
 
-*Trainer Table Schedule*/
+/*Trainer Table Schedule*/
 
-.trainer-schedule.class-timetable .section-title h2, .class-timetable.choseus-section .section-title h2, .class-timetable.about-page-trainer .section-title h2 {
-    color: #191919;
-    margin-bottom: 61px;
+
+.trainer-schedule{
+    background-image: url("IMAGE_URL"), linear-gradient(#4a9e7e, #fafafa, #4a9e7e );
 }
 
-.trainer-schedule.class-timetable .section-title .nav-controls ul li, .class-timetable.choseus-section .section-title .nav-controls ul li, .class-timetable.about-page-trainer .section-title .nav-controls ul li {
-    color: #232530;
-    display: inline-block;
-    list-style: none;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    margin-right: 54px;
-    cursor: pointer;
-}
-  
-.trainer-schedule.class-timetable .section-title .nav-controls ul li.active, .class-timetable.choseus-section .section-title .nav-controls ul li.active, .class-timetable.about-page-trainer .section-title .nav-controls ul li.active {
-    color: #f34e3a;
-}
 
-  .trainer-schedule.class-timetable .section-title .nav-controls ul li:last-child, .class-timetable.choseus-section .section-title .nav-controls ul li:last-child, .class-timetable.about-page-trainer .section-title .nav-controls ul li:last-child {
-    margin-right: 0;
-}
-
-.trainer-schedule .section-title, .choseus-section .section-title, .about-page-trainer .section-title {
+.trainer-schedule .section-title {
     text-align: center;
 }
 
-.trainer-schedule .section-title h2, .choseus-section .section-title h2, .about-page-trainer .section-title h2 {
+.trainer-schedule .section-title h2 {
     font-weight: 600;
     color: #ffffff;
     margin-bottom: 46px;
 }
 
-.trainer-schedule .section-title h2:before, .choseus-section .section-title h2:before, .about-page-trainer .section-title h2:before {
+.trainer-schedule .section-title h2:before {
     width: 70px;
     height: 3px;
     right: 0;
@@ -240,7 +221,7 @@ video {
     margin: 0 auto;
 }
 
-.trainer-schedule .section-title p, .choseus-section .section-title p, .about-page-trainer .section-title p {
+.trainer-schedule .section-title p {
     color: #ffffff;
 }
   
@@ -248,19 +229,6 @@ video {
     overflow-x: auto;
 }
 
-.schedule-table .ts-item {
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
-}
-
-.schedule-table.filtering .ts-item {
-    opacity: 0;
-}
-
-.schedule-table.filtering .ts-item.show {
-    opacity: 1;
-}
 
 .schedule-table table {
     width: 100%;
@@ -350,6 +318,22 @@ video {
     font-weight: 500;
 }
 
+.schedule-table {
+    cursor: pointer;
+}
+
+.schedule-table tr {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.schedule-table tr:hover {
+    background-color: #71C5A5;
+    color: #7304f3;
+}
+
 
 /*----------------------------------
   Start personal trainers edition
@@ -404,8 +388,143 @@ h5 {
     font-family: 'oswald', 'Arial Narrow', 'Arial', 'sans-serif';
 }  
 
-.icon-personal {
+.personal-reference img {
     height: 16px;
     width: 16px;
+    cursor: pointer;
 }
 
+.primary-btn {
+    color: #71C5A5;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'oswald', 'Arial Narrow', 'Arial', 'sans-serif';
+}
+
+
+/*---------------------
+  Pricing Section
+-----------------------*/
+
+.pricing-section {
+	background-image: url(../img/crossfit-banner-2.jpg), linear-gradient(#4a9e7e, #fafafa );
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ps-item {
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pricing-section .section-title {
+	margin-bottom: 56px;
+    color: white;
+}
+
+.ps-item {
+	text-align: center;
+	padding: 40px 30px 52px;
+	border: 1px solid #464646;
+	-webkit-transform: skewY(-4deg);
+	-ms-transform: skewY(-4deg);
+	transform: skewY(-4deg);
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.ps-item:hover {
+	background: #ffffff;
+	border-color: #ffffff;
+}
+
+.ps-item:hover h3 {
+	color: #111111;
+}
+
+.ps-item:hover .pi-price span {
+	color: #444444;
+}
+
+.ps-item:hover ul li {
+	color: #111111;
+	font-weight: 600;
+}
+
+.ps-item:hover .primary-btn.pricing-btn {
+	background: #f36100;
+}
+
+.ps-item:hover .thumb-icon {
+	opacity: 1;
+	visibility: visible;
+}
+
+.ps-item h3 {
+	font-size: 28px;
+	color: #ffffff;
+	font-weight: 600;
+	margin-bottom: 16px;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+}
+
+.ps-item .pi-price {
+	margin-bottom: 30px;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+}
+
+.ps-item .pi-price h2 {
+	font-size: 60px;
+	color: #f36100;
+	font-weight: 600;
+}
+
+.ps-item .pi-price span {
+	color: #c4c4c4;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.ps-item ul {
+	margin-bottom: 40px;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+}
+
+.ps-item ul li {
+	font-size: 14px;
+	color: #c4c4c4;
+	line-height: 32px;
+	list-style: none;
+}
+
+.ps-item .primary-btn.pricing-btn {
+	display: block;
+	background: #333333;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+}
+
+.ps-item .thumb-icon {
+	font-size: 48px;
+	color: #f36100;
+	position: absolute;
+	left: 50px;
+	bottom: 120px;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+	opacity: 0;
+	visibility: hidden;
+}
