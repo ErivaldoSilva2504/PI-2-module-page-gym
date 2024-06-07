@@ -403,7 +403,7 @@ h5 {
 
 
 /*---------------------
-  Pricing Section
+  Planos Section Begin
 -----------------------*/
 
 .pricing-section {
@@ -424,6 +424,20 @@ h5 {
 }
 
 .ps-item {
+	text-align: center;
+	padding: 40px 30px 52px;
+	border: 1px solid #464646;
+	-webkit-transform: skewY(-4deg);
+	-ms-transform: skewY(-4deg);
+	transform: skewY(-4deg);
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.title-planos {
 	text-align: center;
 	padding: 40px 30px 52px;
 	border: 1px solid #464646;
@@ -487,12 +501,6 @@ h5 {
 	font-weight: 600;
 }
 
-.ps-item .pi-price span {
-	color: #c4c4c4;
-	font-size: 16px;
-	font-weight: 700;
-	text-transform: uppercase;
-}
 
 .ps-item ul {
 	margin-bottom: 40px;
@@ -503,9 +511,11 @@ h5 {
 
 .ps-item ul li {
 	font-size: 14px;
-	color: #c4c4c4;
+	color: white;
 	line-height: 32px;
 	list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .ps-item .primary-btn.pricing-btn {
@@ -527,4 +537,21 @@ h5 {
 	transform: skewY(4deg);
 	opacity: 0;
 	visibility: hidden;
+}
+
+
+/* Footer */
+
+.footer-section {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+.img-map {
+    height: 100px;
+    width: 140px;
+    overflow: clip;
 }
