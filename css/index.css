@@ -555,3 +555,9 @@ h5 {
     width: 140px;
     overflow: clip;
 }
+
+
+.img-avatar {
+    height: 128px;
+    width: 128px;
+}
