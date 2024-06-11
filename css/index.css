@@ -42,7 +42,10 @@ Version: 1.0
     src: url(../Fonts/Poppins-Regular.ttf);
 }
 
-
+@font-face {
+    font-family: acetone;
+    src: url(../Fonts/Acetone-w1gn6.ttf);
+}
 
 /*----------------------------------------*/
 /* Template default CSS
@@ -172,20 +175,54 @@ Version: 1.0
 
 
 .container-banner {
-    border: 2px solid red;
     height: 500px;
-}
-
-.banner {
-    border: 2px solid blue;
-}
-
-#banner-2 {
-  background-image: url("IMAGE_URL"), linear-gradient(#4a9e7e, #fafafa );
+    background-image: url(), linear-gradient(#4a9e7e, #fafafa );
 }
 
 video {
     height: 500px;
+}
+
+.title-modalidades {
+    background-image: url(../0.Modalidades/1.png), linear-gradient(#4a9e7e, #fafafa );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 100%;
+    text-shadow: 2px 2px 2px red;
+}
+
+.title-modalidades h2 {
+    font-family: "acetone";
+    font-size: 32px;
+}
+
+#img-musculacao {
+    background-image: url(../1.Musculacao/1.jpg), linear-gradient(#4a9e7e, #fafafa );
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    background-position: center center;
+}
+
+#img-funcional {
+    background-image: url(../2.Funcional/3.jpg), linear-gradient(#4a9e7e, #fafafa );
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    background-position: center center;
+
+}
+#img-crossFit {
+    background-image: url(../3.CrossFit/1.webp), linear-gradient(#4a9e7e, #fafafa );
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    background-position: center center;
 }
 
 
